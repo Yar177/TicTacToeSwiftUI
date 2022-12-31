@@ -17,13 +17,14 @@ struct GameView: View {
         GeometryReader { geometry in
             VStack{
                 Text("Waiting for the player")
+                    .font(.title)
                 Button{
                     print("#function GameView Quit")
                     dismiss()
                 }label: {
                     GameButton(title: "Quit", backgroundColor: .red)
                 }
-                Text("Loading View")
+                LoadingView()
                 Spacer()
                 VStack{
                     LazyVGrid(columns: columns, spacing: 5){
@@ -32,9 +33,13 @@ struct GameView: View {
                                 GameCircleView(proxy: geometry)
                                 PlayerIndicatorView(systemImageName: "applelogo", proxy: geometry)
                             }
+                            .onTapGesture {
+                                print("tap on spot \(i)" , i)
+                            }
                         }
                     }
                 }
+   
             }
         }
     }
