@@ -14,7 +14,7 @@ struct PlayerIndicatorView: View {
     var body: some View {
         Image(systemName: systemImageName)
             .resizable()
-            .frame(width: proxy.size.width / 6,height:  proxy.size.width / 6)
+            .frame(width: proxy.size.width / 8,height:  proxy.size.width / 8)
             .foregroundColor(.white)
             .opacity(systemImageName == "applelogo" ? 0 : 1)
     }

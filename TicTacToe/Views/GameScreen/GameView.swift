@@ -32,10 +32,11 @@ struct GameView: View {
                         ForEach(0..<9){i in
                             ZStack{
                                 GameCircleView(proxy: geometry)
-                                PlayerIndicatorView(systemImageName: "applelogo", proxy: geometry)
+                                PlayerIndicatorView(systemImageName: viewModel.game.moves[i]?.indicator ?? "applelogo", proxy: geometry)
                             }
                             .onTapGesture {
                                 print("tap on spot \(i)" , i)
+                                viewModel.processPlayerMove(for: i)
                             }
                         }
                     }
