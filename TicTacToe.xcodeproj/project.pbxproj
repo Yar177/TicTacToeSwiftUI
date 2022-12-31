@@ -14,6 +14,8 @@
 		9A66B288295FEA430069369D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B287295FEA430069369D /* GameView.swift */; };
 		9A66B28A295FEF950069369D /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B289295FEF950069369D /* GameButton.swift */; };
 		9A66B28C295FF0CE0069369D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B28B295FF0CE0069369D /* HomeViewModel.swift */; };
+		9A66B292295FF82D0069369D /* GameCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B291295FF82D0069369D /* GameCircleView.swift */; };
+		9A66B294295FF8F00069369D /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B293295FF8F00069369D /* PlayerIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		9A66B287295FEA430069369D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		9A66B289295FEF950069369D /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		9A66B28B295FF0CE0069369D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9A66B291295FF82D0069369D /* GameCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCircleView.swift; sourceTree = "<group>"; };
+		9A66B293295FF8F00069369D /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				9A66B289295FEF950069369D /* GameButton.swift */,
+				9A66B291295FF82D0069369D /* GameCircleView.swift */,
+				9A66B293295FF8F00069369D /* PlayerIndicatorView.swift */,
 			);
 			path = SeconderyViews;
 			sourceTree = "<group>";
@@ -179,8 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A608886295FDE1500409E12 /* HomeView.swift in Sources */,
+				9A66B294295FF8F00069369D /* PlayerIndicatorView.swift in Sources */,
 				9A66B28A295FEF950069369D /* GameButton.swift in Sources */,
 				9A66B288295FEA430069369D /* GameView.swift in Sources */,
+				9A66B292295FF82D0069369D /* GameCircleView.swift in Sources */,
 				9A66B28C295FF0CE0069369D /* HomeViewModel.swift in Sources */,
 				9A608884295FDE1500409E12 /* TicTacToeApp.swift in Sources */,
 			);
