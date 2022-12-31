@@ -13,5 +13,6 @@ class GameViewModel: ObservableObject{
                                GridItem(.flexible()),
                                GridItem(.flexible())]
     
+    let game = Game(id: UUID().uuidString, player1: "player1", player2: "player2", blockMoveForPlayerId: "player2", winnerId: "", rematchPlayerId: [], moves: Array(repeating: nil, count: 9))
     
 }

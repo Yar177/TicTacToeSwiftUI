@@ -18,6 +18,7 @@
 		9A66B294295FF8F00069369D /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B293295FF8F00069369D /* PlayerIndicatorView.swift */; };
 		9A66B296295FFBC90069369D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B295295FFBC90069369D /* LoadingView.swift */; };
 		9A66B298295FFE6B0069369D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B297295FFE6B0069369D /* GameViewModel.swift */; };
+		9A66B29B296004010069369D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B29A296004010069369D /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9A66B293295FF8F00069369D /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicatorView.swift; sourceTree = "<group>"; };
 		9A66B295295FFBC90069369D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9A66B297295FFE6B0069369D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		9A66B29A296004010069369D /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				9A608883295FDE1500409E12 /* TicTacToeApp.swift */,
+				9A66B299296003EA0069369D /* Models */,
 				9A66B28F295FF2180069369D /* Views */,
 				9A66B290295FF2280069369D /* SeconderyViews */,
 				9A608887295FDE1600409E12 /* Assets.xcassets */,
@@ -118,6 +121,14 @@
 				9A66B295295FFBC90069369D /* LoadingView.swift */,
 			);
 			path = SeconderyViews;
+			sourceTree = "<group>";
+		};
+		9A66B299296003EA0069369D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A66B29A296004010069369D /* GameModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				9A66B294295FF8F00069369D /* PlayerIndicatorView.swift in Sources */,
 				9A66B28A295FEF950069369D /* GameButton.swift in Sources */,
 				9A66B288295FEA430069369D /* GameView.swift in Sources */,
+				9A66B29B296004010069369D /* GameModel.swift in Sources */,
 				9A66B292295FF82D0069369D /* GameCircleView.swift in Sources */,
 				9A66B296295FFBC90069369D /* LoadingView.swift in Sources */,
 				9A66B28C295FF0CE0069369D /* HomeViewModel.swift in Sources */,
