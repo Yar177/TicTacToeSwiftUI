@@ -23,17 +23,29 @@ class GameViewModel: ObservableObject{
         game.moves[position] = Move(isPlayer1: true, boardIndex: position)
 
         //block the user
+        game.blockMoveForPlayerId = "player2"
+        
         //check for win
+        if checkForWin(for: true, in: game.moves){
+            print("You have won!")
+            return
+        }
         //check for draw
+        if checkForDraw(in: game.moves){
+            print("Draw")
+            return
+        }
     }
     
     func isPositionAvaliable(in moves: [Move?], forIndex index: Int) -> Bool{
         return moves.contains(where: {$0?.boardIndex == index})
     }
     
-    func checkForWin() -> Bool{
-        
-        return true
+    func checkForWin(for player1: Bool, in moves: [Move?]) -> Bool{
+        let playerMoves = moves.compactMap {$0}.filter{$0.isPlayer1 == player1}
+        let playerPositions = Set(playerMoves.map{$0.boardIndex})
+        for pattern in winPatterns where pattern.isSubset(of: playerPositions){return true}
+        return false
     }
     
     func checkForDraw(in moves: [Move?]) -> Bool{

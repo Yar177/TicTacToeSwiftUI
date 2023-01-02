@@ -19,6 +19,7 @@
 		9A66B296295FFBC90069369D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B295295FFBC90069369D /* LoadingView.swift */; };
 		9A66B298295FFE6B0069369D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B297295FFE6B0069369D /* GameViewModel.swift */; };
 		9A66B29B296004010069369D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B29A296004010069369D /* GameModel.swift */; };
+		9A66B29D296268300069369D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66B29C296268300069369D /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		9A66B295295FFBC90069369D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9A66B297295FFE6B0069369D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		9A66B29A296004010069369D /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		9A66B29C296268300069369D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				9A66B29A296004010069369D /* GameModel.swift */,
+				9A66B29C296268300069369D /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				9A66B296295FFBC90069369D /* LoadingView.swift in Sources */,
 				9A66B28C295FF0CE0069369D /* HomeViewModel.swift in Sources */,
 				9A608884295FDE1500409E12 /* TicTacToeApp.swift in Sources */,
+				9A66B29D296268300069369D /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
