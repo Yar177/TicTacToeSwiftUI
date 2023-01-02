@@ -6,9 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct TicTacToeApp: App {
+    
+    init(){
+        FirebaseApp.configure()
+    }
+    
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             HomeView()

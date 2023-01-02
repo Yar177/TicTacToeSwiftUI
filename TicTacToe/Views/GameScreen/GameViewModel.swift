@@ -9,6 +9,8 @@ import SwiftUI
 
 class GameViewModel: ObservableObject{
     
+    @AppStorage("user") private var userData: Data?
+    
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())]
@@ -16,6 +18,16 @@ class GameViewModel: ObservableObject{
    @Published var game = Game(id: UUID().uuidString, player1: "player1", player2: "player2", blockMoveForPlayerId: "player2", winnerId: "", rematchPlayerId: [], moves: Array(repeating: nil, count: 9))
     
     private let winPatterns: Set<Set<Int>> = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
+    
+    @Published var currentUser: User!
+    
+    init(){
+        retriveUser()
+        if currentUser == nil{
+            saveUser()
+        }
+        print("users id", currentUser.id)
+    }
     
     func processPlayerMove(for position: Int){
         if isPositionAvaliable(in: game.moves, forIndex: position){return}
@@ -52,5 +64,26 @@ class GameViewModel: ObservableObject{
         return moves.compactMap {$0}.count == 9
     }
     
+    //MARK: - User obejct
+    func saveUser(){
+        currentUser = User()
+        do{
+            let data = try JSONEncoder().encode(currentUser)
+            userData = data
+            print("endcoding user object")
+        } catch {
+            print("error encoding the user")
+        }
+    }
+    
+    func retriveUser(){
+        guard let userData = userData else {return}
+        do{
+            currentUser = try JSONDecoder().decode(User.self, from: userData)
+            print("decoding user")
+        }catch{
+            print("Error: no user currently exist")
+        }
+    }
     
 }
