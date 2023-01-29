@@ -16,4 +16,27 @@ class FirebaseService: ObservableObject{
     
     init(){}
     
+    func createOnlineGame(){
+        
+    }
+    
+    func startGame(with userId:String){
+        //TODO: check if there is a game to join if not create a game
+        firebaseRefrence(.Game).whereField("player2", isEqualTo: "").whereField("player1", isNotEqualTo: userId).getDocuments { FIRQuerySnapshot, error in
+            <#code#>
+        }
+    }
+    
+    func listeningToGameChanges(){
+        
+    }
+    
+    func createNewgame(with userId: String){
+        
+    }
+    
+    func quiteGame(){
+        
+    }
+    
 }
